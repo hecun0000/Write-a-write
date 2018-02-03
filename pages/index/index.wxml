@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<View class="main">
+  <canvas canvas-id="firstCanvas" class="canvas" 
+  catchtouchstart="startDraw" 
+  catchtouchmove="draw" 
+  catchtouchend="endDraw"></canvas>
+</View>
+<footer>
+  <ul>
+    <li data-num="1" bindtap="changeColor" class="color color1 {{num==1?'color-select':''}}"></li>
+    <li data-num="2" bindtap="changeColor" class="color color2 {{num==2?'color-select':''}}"></li>
+    <li data-num="3" bindtap="changeColor" class="color color3 {{num==3?'color-select':''}}"></li>
+    <li data-num="4" bindtap="changeColor" class="color color4 {{num==4?'color-select':''}}"></li>
+    <li data-num="5" bindtap="changeColor" class="color color5 {{num==5?'color-select':''}}"></li>
+    <li data-num="6" bindtap="changeColor" class="color color6 {{num==6?'color-select':''}}"></li>
+   
+   
+  </ul>
+  <button type="primary" class="clear" bindtap="rebuild">清除 </button>
+</footer>
